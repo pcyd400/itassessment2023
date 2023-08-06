@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang ="eng"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width, initial-sacle=1.0"> 
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body> 
+    <div class="hero">
+        <!--navination bar-->
+        <nav> 
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li class="btn"><a href="index.html">Home</a></li>
+                <li class="btn"><a href="blogs.html">Blogs</a></li>
+                <li class="btn"><a href="gallary.html">Gallary</a></li>
+                <li class="btn"><a href="contact.html">Contact</a></li>
+                <li class="btn"><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        
+        </nav>
+        <!--form code form here -->
+        <div class="container">
+            <form>
+              
+        
+              <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id ="name-error"></span>
+              </div>
+        
+              <div class="input-group">
+                <label>Phone No.</label>
+                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+              </div>
+        
+              <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+              </div>   
+        
+              <div class="input-group">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+              </div>
+        
+            <button onclick="return validateForm">Submit</button>
+            <span id="submit-error"></span>
+           
+          </form>
+        </div>
+
+       
+
+
+    </div>
+    <!--from here footer-->
+    <footer>
+        <div class="footer-content">
+            <img src="images/github.png" width="20px" height="20xp">
+            <div class="github">
+                <a href="https://github.com/pcyd400" target="_blank">GitHub</a>
+            </div>
+            <img src="images/phone.png" width="20px" height="20xp">
+            <div class="contact">
+                <span>+977980000000</span>
+            </div>
+            <img src="images/email.png" width="20px" height="20xp">
+            <div class="email">
+                <span>pcyd100@gmail.com</span>
+            </div>
+            <img src="images/linkedin.png" width="20px" height="20xp">
+            <div class="linkedin">
+                <a href="https://np.linkedin.com/in/prakash-chandra-yadav-062756258" target="_blank">Linkedin</a>
+            </div>
+        </div>
+        <div class="site-name">
+            <span>www.Prakashchandra.com.np</span>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
